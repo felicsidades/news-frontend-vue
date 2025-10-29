@@ -27,10 +27,9 @@
                 }
             },
             mounted(){
-                fetch('https://ok.surf/api/v1/cors/news-feed')
+                fetch('https://picsum.photos/v2/list')
                 .then(res=>res.json())
-                //.then(json=>this.news = json)
-                .then(json=>console.log(json))
+                .then(json=>this.news = json)
             }
         }
         Vue.createApp(options).mount("#vue-app")
