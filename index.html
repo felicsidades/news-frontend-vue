@@ -21,7 +21,7 @@
                 }
             },
             mounted(){
-                fetch('https://gnews.io/api/v4/search?q=Ernst%20Young&token=7c4395a17246753afd728c97196361bc')
+                fetch('https://ok.surf/api/v1/cors/news-feed')
                 .then(res=>res.json())
                 .then(json=>this.news= json)
             }
