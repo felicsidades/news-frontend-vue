@@ -10,10 +10,10 @@
 </head>
 <body>
     <div id="vue-app" class="main">
-        <h1>Recent news</h1>
+        <h1>Images</h1>
         <div class="colletion">
             <div class="item-card" v-for="item in items">
-                <img class="item-img" :src="item.download_url">
+                <img class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl h-auto object-cover rounded-lg mx-auto" :src="item.download_url">
                 <div class="author-name" v-html="item.author"></div>
             </div>
         </div>
