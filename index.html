@@ -15,8 +15,13 @@
     <script src="https://unpkg.com/vue@3"></script>
     <script>
         const options = {
+            data(){
+                return {
+                    news: []
+                }
+            },
             mounted(){
-                fetch('https://fakestoreapi.com/products/')
+                fetch('https://newsapi.org/v2/everything?q=bitcoin&apiKey=0f6e222c35e444c6b9a45100e6b7d173')
                 .then(res=>res.json())
                 .then(json=>console.log(json))
             }
