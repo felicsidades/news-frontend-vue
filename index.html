@@ -15,7 +15,11 @@
     <script src="https://unpkg.com/vue@3"></script>
     <script>
         const options = {
-            
+            mounted(){
+                fetch('https://fakestoreapi.com/products/')
+                .then(res=>res.json())
+                .then(json=>console.log(json))
+            }
         }
         Vue.createApp(options).mount("#vue-app")
     </script>
