@@ -13,7 +13,7 @@
         <h1>Images</h1>
         <div class="colletion">
             <div class="item-card" v-for="item in items">
-                <img class="item-img" :src="item.download_url">
+                <img class="item-img" style="width: 160px; height: auto; object-fit: cover; border-radius: 8px; display: block; margin: 0 auto;" :src="item.download_url">
                 <div class="author-name" v-html="item.author"></div>
             </div>
         </div>
