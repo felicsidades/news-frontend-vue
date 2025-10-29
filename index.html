@@ -4,11 +4,21 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Main page</title>
-    <script src="https://unpkg.com/vue@3"></script>
+    
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='css/stylesheet.css'>
 </head>
 <body>
+    <div id="vue-app" class="main">
+        <h1>Main content</h1>
+    </div>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script>
+        const options = {
+            
+        }
+        Vue.createApp(options).mount("#vue-app")
+    </script>
     <script src="js/main.js"></script>
 </body>
 </html>
