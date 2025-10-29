@@ -29,7 +29,8 @@
             mounted(){
                 fetch('https://ok.surf/api/v1/cors/news-feed')
                 .then(res=>res.json())
-                .then(json=>this.news = json)
+                //.then(json=>this.news = json)
+                .then(json=>console.log(json))
             }
         }
         Vue.createApp(options).mount("#vue-app")
