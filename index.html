@@ -24,6 +24,7 @@
                 fetch('https://newsapi.org/v2/everything?q=bitcoin&apiKey=0f6e222c35e444c6b9a45100e6b7d173')
                 .then(res=>res.json())
                 .then(json=>console.log(json))
+                //.then(json=>this.news= json)
             }
         }
         Vue.createApp(options).mount("#vue-app")
