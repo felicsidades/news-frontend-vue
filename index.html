@@ -21,7 +21,7 @@
                 }
             },
             mounted(){
-                fetch('https://newsapi.org/v2/everything?q=bitcoin&apiKey=0f6e222c35e444c6b9a45100e6b7d173')
+                fetch('https://gnews.io/api/v4/search?q=Ernst%20Young&token=7c4395a17246753afd728c97196361bc')
                 .then(res=>res.json())
                 .then(json=>this.news= json)
             }
