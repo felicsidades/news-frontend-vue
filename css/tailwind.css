@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .item-img {
+    @apply w-full max-w-custom h-auto object-cover rounded-lg mx-auto;
+  }
+}
